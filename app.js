@@ -5,7 +5,7 @@ const loginRoutes = require("./routes/LoginRoute");
 
 const app = express();
 
-app.use(cors({ origin: "https://api.sturgillsturtles.com" }));
+app.use(cors({ origin: "https://sturgillsturtles.com" }));
 
 app.use(express.json());
 
