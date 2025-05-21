@@ -8,10 +8,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Add a root GET route to verify connectivity
 app.get("/", (req, res) => {
-    res.json({ message: "You are connected to the server!" });
+    console.log("Root route accessed!");
+    res.json({ message: "API root is working!" });
 });
+
 
 // Your other routes
 app.use("/mailing-list", mailingListRoutes);
